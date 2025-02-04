@@ -12,6 +12,11 @@ int main()
 {
 	int liczba;
 	cin>>liczba;
+	
+    	if (liczba <= 0) {
+        	cout << "Blad: liczba musi byc dodatnia" << endl;
+        	return 1;
+    	}
 	cout << liczba << " jest " << (czy_pierwsza(liczba) ? "pierwsza" : "zlozona") << endl;
 	return 0;
 }
